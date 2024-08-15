@@ -17,7 +17,7 @@ with open("Input/Letters/starting_letter.txt", 'r') as file:
 
 # loop over name_list, change info then write to new file
 for name in name_list:
-    with open(f"Output/ReadyToSend/{name}.txt", "w") as name_letter:
+    with open(f"Output/ReadyToSend/letter_for_{name}.txt", "w") as name_letter:
         new_info = letter_data.replace("[name]", name)
         name_letter.write(new_info)
 
